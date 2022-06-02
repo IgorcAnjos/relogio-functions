@@ -31,4 +31,4 @@ Além  de escolher os minutos de ativação de um cronômetro, que aceita inputs
 
 ## E Disponível para visualização no link <a href="https://relogio-functions-igorcanjos.vercel.app/">Aqui</a>
 
-<p>Esta projeto está integrado com um outro projeto feito por mim e disponível neste próprio github</p>
+<p>Este projeto está integrado com um outro projeto feito por mim e disponível neste próprio github</p>
