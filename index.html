@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/128/86/86093.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Relógio</title>
+</head>
+<body>
+  <section class="relogio-circular">
+    <div class="clock">
+      <div class="hand seconds"></div>
+      <div class="hand minutes"></div>
+      <div class="hand hours"></div>
+
+      <div class="div number number-1">1</div>
+      <div class="div number number-2">2</div>
+      <div class="div number number-3">3</div>
+      <div class="div number number-4">4</div>
+      <div class="div number number-5">5</div>
+      <div class="div number number-6">6</div>
+      <div class="div number number-7">7</div>
+      <div class="div number number-8">8</div>
+      <div class="div number number-9">9</div>
+      <div class="div number number-10">10</div>
+      <div class="div number number-11">11</div>
+      <div class="div number number-12">12</div>
+    </div>
+  </section>
+
+  <div class="clock-digital">
+    <div class="number-hours"></div>
+    <div class="number-minutes"></div>
+    <div class="number-secunds"></div>
+  </div>
+
+  
+  <section >
+    <p>Hora Atual</p>
+    <input class="botao-hora" type="button" value="Mostrar!">
+  </section>
+  
+  <div class="popup-wrapper" id="wrapper-hora">
+    <div class="popup">
+      <p class="popup-close" id="popup-close-hora"> X </p>
+      <div class="popup-content" id='hora'>00:00</div>
+    </div>
+  </div>
+
+  <section>
+    <p>Relógio Pomodoro</p>
+    <input type="button" class="botao-pomodoro" value="Mostrar!">
+  </section>
+  
+  <!-- Fundo translucido do Popup do Cronometro Pomodoro -->
+  <div class="popup-wrapper" id="wrapper-pomodoro">
+    <!-- Caixa do popup -->
+    <div class="popup">
+      <!-- Conteúdos da caixa do Popup-->
+      <p class="popup-close" id="popup-close-pomodor"> X </p>
+      <input type="button" class="botao-pomodoro" id="botao-inicio-pomodoro" value="Iniciar">
+      <div class="popup-content" id="pomodoro">00:00:00</div>
+      <input type="button" id="botao-pausa-pomodoro" value="Parar">
+    </div>
+  </div>
+  
+  <section>
+    <p>Cronometro</p>
+    <input type="number" placeholder="Minutos:" name="textcontagem" id="contagem-cronometro"><br>
+    <input type="button" value="Iniciar" class="botao-iniciar-cronometro">
+  </section>
+
+  <!-- Fundo translucido do Popup do Cronometro -->
+  <div class="popup-wrapper" id="wrapper-cronometro">
+    <!-- Caixa do popup -->
+    <div class="popup">
+      <!-- Conteúdos da caixa do Popup-->
+      <p class="popup-close" id="popup-close-cronometro"> X </p>
+      <div class="popup-content" id="cronometro">00:00</div>
+      <input type="button" id="botao-pausa-cronometro" value="Parar">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

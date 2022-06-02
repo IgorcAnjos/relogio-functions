@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Share Tech Mono', monospace;
+}
+html {
+  background-color: #160b0b;
+  text-align: center;
+  font-size: larger;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  top: 10px;
+  width: 250px;
+  height: 250px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  border: 2px solid black;
+  position: relative;
+}
+.clock .number {
+  --rotation: 0;
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 7px;
+}
+.clock .number.number-1 {
+  --rotation: 30deg;
+}
+.clock .number.number-2 {
+  --rotation: 60deg;
+}
+.clock .number.number-3 {
+  --rotation: 90deg;
+}
+.clock .number.number-4 {
+  --rotation: 120deg;
+}
+.clock .number.number-5 {
+  --rotation: 150deg;
+}
+.clock .number.number-6 {
+  --rotation: 180deg;
+}
+.clock .number.number-7 {
+  --rotation: 210deg;
+}
+.clock .number.number-8 {
+  --rotation: 240deg;
+}
+.clock .number.number-9 {
+  --rotation: 270deg;
+}
+.clock .number.number-10 {
+  --rotation: 300deg;
+}
+.clock .number.number-11 {
+  --rotation: 330deg;
+}
+
+/* Ponteiros */
+
+.clock::after {
+  content: "";
+  position:absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  z-index: 11;
+  background-color: black;
+  transform: translate(-50%, -50%);
+}
+
+.clock .hand {
+  --rotation: 0;
+
+  transform-origin: bottom;transform-origin: bottom;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  background-color: black;
+  transform: translateX(-50%) rotate(calc(var(--rotation) * 1deg));
+  z-index: 10;
+  border-top-left-radius: 90%;
+  border-top-right-radius: 90%;
+}
+
+.clock .hand.seconds {
+  width: 2px;
+  height: 35%;
+  background-color: red;
+}
+.clock .hand.minutes {
+  width: 5px;
+  height: 30%;
+  background-color: black;
+}
+.clock .hand.hours {
+  width: 6px;
+  height: 22%;
+  background-color: black;
+}
+section {
+  display: block;
+  background-color: rgb(106, 181, 204);
+  margin: 15px auto  ;
+  width: 75%;
+  max-width: 500px;
+  border-radius: 4px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 2px 2px 2px;
+  display: block;
+  justify-content: center;
+}
+.relogio-circular {
+  width: min-content;
+  height: min-content;
+  padding-top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+.relogio-circular:hover {
+  box-shadow: 4px 4px 4px;
+  max-width: min-content;
+  padding-top: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+section:hover {
+  width: 80%;
+  max-width: 525px;
+  box-shadow: 4px 4px 4px;
+}
+.popup-wrapper {
+  display:none;
+  background-color: rgb(0,0,0,0.5);
+  top: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+.popup {
+  top: 20%;;
+  display: block;
+  text-align: center;
+  width: 80%;
+  margin: 10% auto;
+  max-width: 400px;
+  padding: 20px;
+  position: relative;
+  background: white;
+  border-radius: 4px;
+}
+.popup-content {
+  font-weight:300;
+}
+.popup-close {
+  font-size: 25px;
+  font-weight: 300;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  color: crimson;
+  cursor: pointer;
+}
+.popup-close:hover {
+  transform:rotate(90deg);
+}
+input {
+  text-align:center;
+  border: none;
+  width: 100%;
+  max-width: 100px;
+  height:3cm;
+  max-height: 40px;
+  margin: 5px;
+  color: white;
+  border-radius: 2px;
+  background: rgb(251, 38, 81);
+  box-shadow: 2px 2px 2px #000000 ;
+  cursor: pointer;
+}
+#contagem-cronometro {
+  background-color: rgb(214, 30, 67);
+}
+input:hover {
+  transform: translateY(2px);
+  box-shadow: 1px 1px 0px #000000 ;
+}
+input::placeholder {
+  color: rgba(226, 226, 226, 0.679);
+}
