@@ -14,14 +14,13 @@
  
 <div align="center">
 
-  <p>Com funcionalidades básicas e intermediárias que envolvem horários e relógios.
-
-Está página pode te mostrar a hora atual em um "relógio analógico" e em um relógio digital.
+  <p>Com funcionalidades básicas e intermediárias que envolvem horários e relógios.</p>
+  <img src="https://media.discordapp.net/attachments/955695681052487733/981880038980993084/unknown.png?width=710&height=400">
+  <p>Está página pode te mostrar a hora atual em um "relógio analógico" e em um relógio digital.
 
 Você pode ativar um loop de cronômetros Pomodoro com intervalos de 25 e 5 minutos.
 
 Além  de escolher os minutos de ativação de um cronômetro, que aceita inputs numéricos para minutagem.</p>
-  <img src="https://media.discordapp.net/attachments/955695681052487733/981880038980993084/unknown.png?width=710&height=400">
   <img src="https://media.discordapp.net/attachments/955695681052487733/981880797084659712/unknown.png">
   <p>Possuí aprendizados no uso básico de pop-up's para mostrar os "resultados" de todas as funcionalidades, exceto o"relógio analógico".</p>
   <img src="https://media.discordapp.net/attachments/955695681052487733/981881728132083742/unknown.png">
@@ -30,6 +29,6 @@ Além  de escolher os minutos de ativação de um cronômetro, que aceita inputs
   <img src="https://media.discordapp.net/attachments/955695681052487733/981882474336485458/unknown.png">
 </div>
 
-## E Disponível para visualização no link <a href="https://clone-tinder-igorcanjos.vercel.app/">Aqui</a>
+## E Disponível para visualização no link <a href="https://relogio-functions-igorcanjos.vercel.app/">Aqui</a>
 
 <p>Esta projeto está integrado com um outro projeto feito por mim e disponível neste próprio github</p>
